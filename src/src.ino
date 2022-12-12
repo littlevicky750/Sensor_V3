@@ -148,7 +148,6 @@ static void Buff(void *pvParameter)
       Msg += String(imu.Angle[0], 3) + ",";
       Msg += String(imu.Angle[1], 3) + ",";
       Msg += String(imu.Angle[2], 3) + ",";
-      Msg += String(imu4.T, 3) + ",";
       Msg += String(imu.A[0], 6) + ",";
       Msg += String(imu.A[1], 6) + ",";
       Msg += String(imu.A[2], 6) + ",";
