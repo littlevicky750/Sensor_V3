@@ -81,10 +81,6 @@ static void LOOP(void *pvPArameter)
 
     // Update IMU
     imu.Update();
-    if (imu4.status >= 0 || imu.ErrorCode == imu.IMU_Update_Success)
-    {
-      // imu4.Update();
-    }
     // put I2C device update in same task will be better. (in case library contain delay())
     delay(1);
     Clock.update();
