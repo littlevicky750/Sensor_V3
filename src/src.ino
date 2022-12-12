@@ -40,7 +40,6 @@ extern SerialDebug Debug = D;
 
 #include <NimBLEDevice.h>
 #include "IMU901.h"
-#include "IMU42688.h"
 #include "OLED.h"
 #include "BLE.h"
 #include "LongPressSwich.h"
@@ -61,7 +60,6 @@ TaskHandle_t *T_READ;
 
 BLE ble;
 IMU901 imu;
-IMU42688 imu4;
 OLED oled;
 LongPressSwich Swich;
 SDCard sdCard;
@@ -221,7 +219,6 @@ void setup()
   oled.Bat = &Bat.Percent;
   imu.RollDisplacement = &Save_Roll_Displacement;
   imu.Initialize(Pin_IMU_RX, Pin_IMU_TX);
-  imu4.JY901Angle = &imu.Angle[0];
   while (!digitalRead(Pin_Button0))
     delay(1);
   xTaskCreatePinnedToCore(FAST, "Fast", 10000, NULL, 2, T_FAST, 1);
