@@ -1,0 +1,3 @@
+For Esp32 S3 in Arduino
+install library list in platform.ini
+install JY901
