@@ -92,11 +92,9 @@ void SDCard::CreateFile(String FolderName)
   String Headler = "";
   Headler += "SubSensor Version : 3.0 Beta. \n";
   Headler += "Sensor ID / Local File Create Date (YMD) : " + FolderName + "\n";
-  Headler += "Time, Roll, Pitch, Yaw, Temperature 42688";
+  Headler += "Time, Roll, Pitch, Yaw";
   Headler += ",A[0]_JY901, A[1]_JY901, A[2]_JY901";
   Headler += ",G[0]_JY901, G[1]_JY901, G[2]_JY901";
-  Headler += ",A[0]_42688, A[1]_42688, A[2]_42688";
-  Headler += ",A[0]_42688, A[1]_42688, A[2]_42688";
   Headler += "\n";
 
   if (AvoidWDTimeOutCount == 0)
