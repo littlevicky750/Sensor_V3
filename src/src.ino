@@ -155,12 +155,6 @@ static void Buff(void *pvParameter)
       Msg += String(imu.G[0], 6) + ",";
       Msg += String(imu.G[1], 6) + ",";
       Msg += String(imu.G[2], 6) + ",";
-      Msg += String(imu4.A[0], 6) + ",";
-      Msg += String(imu4.A[1], 6) + ",";
-      Msg += String(imu4.A[2], 6) + ",";
-      Msg += String(imu4.G[0], 6) + ",";
-      Msg += String(imu4.G[1], 6) + ",";
-      Msg += String(imu4.G[2], 6) + "\n";
     }
     // Serial.println("T = " + String(imu4.T,2));
     // Serial.println("A[0] : " + String(imu.Angle[0],3) + " / " +  String(imu4.Angle[0],3));
